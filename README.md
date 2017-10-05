@@ -2,4 +2,4 @@
 
 Rust bindings for xlib.
 
-Note: This project is currently unmaintained.
+Forked from <https://github.com/servo/rust-xlib>.
