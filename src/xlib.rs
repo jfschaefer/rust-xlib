@@ -1217,6 +1217,24 @@ bitflags! {
     }
 }
 
+bitflags! {
+    flags XKeyModifierMasks: c_uint {
+        const ShiftMask   = (1<<0),
+        const LockMask    = (1<<1),
+        const ControlMask = (1<<2),
+        const Mod1Mask    = (1<<3),
+        const Mod2Mask    = (1<<4),
+        const Mod3Mask    = (1<<5),
+        const Mod4Mask    = (1<<6),
+        const Mod5Mask    = (1<<7),
+        const Button1Mask = (1<<8),
+        const Button2Mask = (1<<9),
+        const Button3Mask = (1<<10),
+        const Button4Mask = (1<<11),
+        const Button5Mask = (1<<12),
+    }
+}
+
 // event names, from <X11/X.h>
 pub const KeyPress: c_int         = 2;
 pub const KeyRelease: c_int       = 3;
@@ -2243,3 +2261,5 @@ pub const CWEventMask: u64 = 1 << 11;
 pub const CWDontPropagate: u64 = 1 << 12;
 pub const CWColormap: u64 = 1 << 13;
 pub const CWCursor: u64 = 1 << 14;
+
+
