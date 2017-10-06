@@ -2263,3 +2263,10 @@ pub const CWColormap: u64 = 1 << 13;
 pub const CWCursor: u64 = 1 << 14;
 
 
+// from <X11/X.h>: stacking modes
+
+pub const Above : c_int    = 0;
+pub const Below : c_int    = 1;
+pub const TopIf : c_int    = 2;
+pub const BottomIf : c_int = 3;
+pub const Opposite : c_int = 4;
