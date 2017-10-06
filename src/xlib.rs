@@ -2241,10 +2241,12 @@ pub static XA_WM_TRANSIENT_FOR: Atom = 68;
 
 pub static XA_LAST_PREDEFINED: Atom = 68;
 
-// from <X11/X.h>
+// from <X11/X.h>: Window classes used by CreateWindow
 
 pub const InputOutput: u32 = 1;
 pub const InputOnly: u32 = 2;
+
+// from <X11/X.h>: Window attributes for CreateWindow and ChangeWindowAttributes
 
 pub const CWBackPixmap: u64 = 1 << 0;
 pub const CWBackPixel: u64 = 1 << 1;
@@ -2262,6 +2264,15 @@ pub const CWDontPropagate: u64 = 1 << 12;
 pub const CWColormap: u64 = 1 << 13;
 pub const CWCursor: u64 = 1 << 14;
 
+// from <X11/X.h>: ConfigureWindow structure
+
+pub const CWX: u32           = (1<<0);
+pub const CWY: u32           = (1<<1);
+pub const CWWidth: u32       = (1<<2);
+pub const CWHeight: u32      = (1<<3);
+pub const CWBorderWidth: u32 = (1<<4);
+pub const CWSibling: u32     = (1<<5);
+pub const CWStackMode: u32   = (1<<6);
 
 // from <X11/X.h>: stacking modes
 
