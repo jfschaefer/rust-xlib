@@ -2281,3 +2281,9 @@ pub const Below : c_int    = 1;
 pub const TopIf : c_int    = 2;
 pub const BottomIf : c_int = 3;
 pub const Opposite : c_int = 4;
+
+// from <X11/X.h>: XMappingEvent request types
+
+pub const MappingModifier : c_int = 0;
+pub const MappingKeyboard : c_int = 1;
+pub const MappingPointer : c_int  = 2;
