@@ -2287,3 +2287,9 @@ pub const Opposite : c_int = 4;
 pub const MappingModifier : c_int = 0;
 pub const MappingKeyboard : c_int = 1;
 pub const MappingPointer : c_int  = 2;
+
+// from <X11/X.h>: property modes
+
+pub const PropModeReplace : c_int = 0;
+pub const PropModePrepend : c_int = 1;
+pub const PropModeAppend : c_int  = 2;
